@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    brew install chromedriver
+    bundle install
+    bundle exec rails db:setup db:migrate
+    rails test:system
 
-Things you may want to cover:
+    Error:
+    FooTest#test_visiting_root:
+    NoMethodError: undefined method `needs_server?' for nil:NilClass
+        test/system/foo_test.rb:5:in `block in <class:FooTest>'
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    Error:
+    FooTest#test_visiting_root:
+    NoMethodError: undefined method `needs_server?' for nil:NilClass
